@@ -44,7 +44,7 @@ public class EntregaController {
 		Entrega novaEntrega = entregaAssemble.toEntity(entregaInput);
 		Entrega entregaSolicitada = entregar.solicitar(novaEntrega);
 		
-		return entregaAssemble.toModel(entregaSolicitada);
+		return entregaAssemble.toModel(entregaSolicitada);//inserindo
 	}
 	
 	@GetMapping
